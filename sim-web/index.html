@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Table Cleaner · Simulated Alexa+ Demo</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./vendor/xlsx.full.min.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="banner">Simulated Alexa+ experience (demo) — hackathon submission simulation layer</div>
+  <main class="chat">
+    <header><h1>Table Cleaner</h1><p>Turn messy pasted text into a downloadable spreadsheet.</p></header>
+    <section id="messages" class="messages" role="log" aria-live="polite" aria-label="Chat messages">
+      <article class="message assistant">Paste a table below, or load the sample to get started.</article>
+    </section>
+    <form id="composer">
+      <label for="input">Your table</label>
+      <textarea id="input" rows="4" placeholder="Paste your messy table here…" required></textarea>
+      <div class="actions"><button id="sample" type="button" class="secondary">Load sample</button><button id="send" type="submit">Send</button></div>
+    </form>
+  </main>
+</body>
+</html>

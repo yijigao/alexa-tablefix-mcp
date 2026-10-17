@@ -1,0 +1,14 @@
+{
+  "name": "amazon-hackathon-alexa-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stateless MCP server for the Amazon Developer Hackathon Alexa+ track",
+  "type": "commonjs",
+  "scripts": { "start": "node server.js", "verify": "node verify.js" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "express": "latest",
+    "zod": "latest"
+  },
+  "engines": { "node": ">=20" }
+}
